@@ -1,0 +1,25 @@
+package como_estou_em_java;
+
+import java.util.Scanner;
+
+public class Atividade05 {
+	
+	Scanner input = new Scanner(System.in); 
+	public int estoqueMedio() {
+		System.out.println("Informe a quantidade mínima de estoque e a máxima");
+		int qtdMinima, qtdMaxima, estoqueMedio;
+		qtdMinima = input.nextInt(); 
+		qtdMaxima = input.nextInt();
+		estoqueMedio = (qtdMinima + qtdMaxima) / 2;
+		return estoqueMedio; 
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Atividade05 atv05 = new Atividade05();
+		System.out.println(atv05.estoqueMedio());
+
+	}
+
+}
